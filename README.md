@@ -12,7 +12,7 @@ Language: Python <br>
 The flight booking dataset obtained from “Ease My Trip” website has 300,154 rows in total. It contains flight ticket data in six major airports in India: Mumbai, Bangalore, Kolkata, Hyderabad, Chennai, and Delhi. There are six airlines in this data which are SpiceJet, AirAsia, Vistara, GO FIRST, Indigo, and Air India. In addition, we are also considering adding more features to the dataset which might include: the population of the source city and destination, airports capacity, population's average salary and some other related features.
 
 ## The Objective & Response Variable
-The objective is to create an algorithm to provide a range prediction for airline ticket price.
+__The objective is to create an algorithm to provide a range prediction for airline ticket price.__
 
 The response variable would be the Ticket Price, and we plan to apply Generalized Linear Model to predict it. The specific type of GLM that will be using would depend on the distribution of our data, and we still need to explore more about the GLM we will use since we need to complete some exploratory data analysis first. For example, if the ticket price of the final dataset is normally distributed, the linear regression model can be used. If the ticket price of the final dataset is not normally distributed, a Poisson or negative binomial distribution regression model might be appropriate. We will also check the assumptions of the model before using it.  
 
