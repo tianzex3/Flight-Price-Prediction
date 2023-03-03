@@ -9,7 +9,7 @@ File Type: csv <br>
 Language: Python <br>
 
 ## Available Data
-The dataset has 300,154 rows in total. It contains flight ticket data in six major airports in India: Mumbai, Bangalore, Kolkata, Hyderabad, Chennai, and Delhi. There are six airlines in this data which are SpiceJet, AirAsia, Vistara, GO FIRST, Indigo, and Air India. In addition, we are also considering adding more features to the dataset which might include: the population of the source city and destination, airports capacity, population's average salary and some other related features.
+The flight booking dataset obtained from “Ease My Trip” website has 300,154 rows in total. It contains flight ticket data in six major airports in India: Mumbai, Bangalore, Kolkata, Hyderabad, Chennai, and Delhi. There are six airlines in this data which are SpiceJet, AirAsia, Vistara, GO FIRST, Indigo, and Air India. In addition, we are also considering adding more features to the dataset which might include: the population of the source city and destination, airports capacity, population's average salary and some other related features.
 
 ## The Objective
 The objective is to create an algorithm to provide a range prediction for airline ticket price.
