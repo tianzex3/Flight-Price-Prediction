@@ -1,33 +1,23 @@
 # Flight Ticket Price Prediction using Quantile Regression
 __Flight ticket prices are always dynamic along the time. In this project, we will analyze and predict the dynamic flight ticket price in India based on various features.__
 
+![image](https://user-images.githubusercontent.com/90085137/222812255-9a0176f0-0cae-4b51-8bd4-b46ff0c9735b.png)
+
 ## Methodology
-Tool: Google Cloud Platform <br>
-File Type: Json <br>
-Language: PySpark, Hadoop <br>
-Data Frame: PySpark DataFrame, Spark RDD, Pandas <br>
-Method and Techniques: MinHash LSH for Jaccard Distance <br>
+Tool: Quantile Regression <br>
+File Type: csv <br>
+Language: Python <br>
 
 ## Available Data
-I have access to a collection of Twitter data that is stored in Google Cloud Storage. Once  combine individual JSON files, there will be around 100 million Tweets (~500GB).  These tweets are collected on the topics of education, schools, universities, learning, knowledge sharing, etc., but only a fraction of them would be directly related to either primary, secondary or higher education.
+The dataset has 300,154 rows in total. It contains flight ticket data in six major airports in India: Mumbai, Bangalore, Kolkata, Hyderabad, Chennai, and Delhi. There are six airlines in this data which are SpiceJet, AirAsia, Vistara, GO FIRST, Indigo, and Air India. In addition, we are also considering adding more features to the dataset which might include: the population of the source city and destination, airports capacity, population's average salary and some other related features.
 
 ## The Objective
-The objective is to identify whether Twitter can be considered a credible source of information, which reflects the emergence of important trends or topics in education, and the topic is “Biden’s college student debt relief”.
+The objective is to create an algorithm to provide a range prediction for airline ticket price.
 
-## Questions to Answer
--Based on the analysis, are higher Tweet volumes reflective of the emergence of new hot topic in education?  <br>
--Or they are more related to other events, such as sports, viral social media posts, university application cycles, being admitted to the university, etc.? <br>
--Who are these Twitterers that are tweeting about K-12 Links to an external site.or Higher Education? <br>
--Are these mostly government institutions, universities and credible non-profit organizations? <br>
--Or random users tweeting about their schools, teachers, application processes, or attitudes toward going (or not going) to schools. <br>
--Do you see most of these messages being original content or just copies of the original tweets / retweets?
+## Response Variable
+The response variable would be the Ticket Price, and we plan to apply Generalized Linear Model to predict it. The specific type of GLM that will be using would depend on the distribution of our data, and we still need to explore more about the GLM we will use since we need to complete some exploratory data analysis first. For example, if the ticket price of the final dataset is normally distributed, the linear regression model can be used. If the ticket price of the final dataset is not normally distributed, a Poisson or negative binomial distribution regression model might be appropriate. We will also check the assumptions of the model before using it.  
 
 ## Conclusion
-Twitter could be considered a source of information that can reflect the emergence of important trends or topics in education. It also could be useful for understanding the public’s opinion on a certain topic or trend in education.
 
-However, based on the current analysis, it should not be considered a creditable source to obtain knowledge for the topic in general until further tweet analysis. Since most tweets are original content created by social media influencers other than authority agencies such as governments, schools, news, and non-profit organizations.
 
-## Future Work
-In addition to the current analysis, the analysis of the credibility of original tweets created by social media influencers could be the aim for the next step:
-
-__“How credible are the original tweets could be taken for topic knowledge gaining from non-authority entities?”__
+Source Site: https://www.kaggle.com/datasets/shubhambathwal/flight-price-prediction
