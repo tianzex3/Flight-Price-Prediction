@@ -8,8 +8,10 @@ Tool: Quantile Regression <br>
 File Type: csv <br>
 Language: Python <br>
 
-## Available Data
-The flight booking dataset obtained from “Ease My Trip” website has 300,154 rows in total. It contains flight ticket data in six major airports in India: Mumbai, Bangalore, Kolkata, Hyderabad, Chennai, and Delhi. There are six airlines in this data which are SpiceJet, AirAsia, Vistara, GO FIRST, Indigo, and Air India. In addition, we are also considering adding more features to the dataset which might include: the population of the source city and destination, airports capacity, population's average salary and some other related features.
+## Available Data Summary
+1. The transaction amount is relatively small. The mean of all the mounts made is approximately USD 88.
+2. There are no "Null" values, so we don't have to work on ways to replace values.
+3. Most of the transactions were Non-Fraud (99.83%) of the time, while Fraud transactions occurs (017%) of the time in the dataframe.
 
 ## The Objective & Response Variable
 __The objective is to create an algorithm to provide a range prediction for airline ticket price.__
