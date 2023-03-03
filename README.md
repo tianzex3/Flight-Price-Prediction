@@ -19,5 +19,4 @@ The response variable would be the Ticket Price, and we plan to apply Generalize
 
 ## Conclusion
 
-
 Source Site: https://www.kaggle.com/datasets/shubhambathwal/flight-price-prediction
