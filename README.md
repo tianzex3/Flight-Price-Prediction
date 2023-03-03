@@ -16,6 +16,7 @@ __The objective is to create an algorithm to provide a range prediction for airl
 
 The response variable would be the Ticket Price, and we plan to apply Generalized Linear Model to predict it. The specific type of GLM that will be using would depend on the distribution of our data, and we still need to explore more about the GLM we will use since we need to complete some exploratory data analysis first. For example, if the ticket price of the final dataset is normally distributed, the linear regression model can be used. If the ticket price of the final dataset is not normally distributed, a Poisson or negative binomial distribution regression model might be appropriate. We will also check the assumptions of the model before using it.  
 
-## 
+## Literature Review
+Literature reviews are also been performed to gain insight for developing new theories or conceptual frameworks that can be applied in future research; Identifying research gaps and inconsistencies that can inform the design of new studies; Understanding the historical context and evolution of a particular research area or discipline.
 
 Source Site: https://www.kaggle.com/datasets/shubhambathwal/flight-price-prediction
